@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penjelasan Kondisi Eksperimen</title>
     <style>
       body {
@@ -52,6 +52,38 @@
       button:hover {
         background: #555;
       }
+
+      @media (max-width: 768px) {
+        body {
+          height: auto; /* biar bisa scroll di layar kecil */
+          padding: 20px;
+          align-items: flex-start; /* biar konten mulai dari atas */
+        }
+
+        .container {
+          padding: 20px;
+          max-width: 100%;
+          width: 100%;
+          border-radius: 12px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        ol {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 12px 24px;
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -59,8 +91,11 @@
       <h1>Eksperimen Simulasi Mobile Banking (A4)</h1>
       <ol>
         <li>
-          Anda akan melakukan simulasi proses verifikasi dalam mobile banking
-          sebelum melakukan transaksi.
+          Anda akan melakukan
+          <b
+            >simulasi proses verifikasi dalam mobile banking sebelum melakukan
+            transaksi/pembayaran</b
+          >.
         </li>
         <li>
           Kondisi eksperimen: anggap Anda sedang melakukan proses verifikasi
@@ -70,13 +105,21 @@
           Data yang Anda masukkan dalam proses verifikasi harus dianggap sebagai
           data pribadi Anda sendiri.
         </li>
+        <li>PIN yang perlu Anda masukkan adalah: 123456.</li>
         <li>
           Metode autentikasi yang akan Anda gunakan adalah <b>Face ID</b>. Face
           ID adalah metode verifikasi biometrik yang memindai dan mengenali
           wajah pengguna untuk mengkonfirmasi identitas sebelum proses
           verifikasi transaksi dilakukan.
         </li>
-        <li>Perhatikan dengan saksama metode autentikasi yang digunakan.</li>
+        <li>
+          Karena menggunakan metode Face ID, Anda tidak perlu memasukkan PIN
+          lagi dalam proses verifikasi ini.
+        </li>
+        <li>
+          Perhatikan dengan saksama metode autentikasi, kebijakan privasi, dan
+          indikator visual keamanan yang ditampilkan.
+        </li>
       </ol>
       <button onclick="startExperiment()">Mulai Eksperimen</button>
     </div>
