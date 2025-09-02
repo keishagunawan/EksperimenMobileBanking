@@ -357,16 +357,18 @@
       }
     
       .tutorial-textbox {
-        bottom: 0px;
-        max-width: none;
-        width: calc(100% - 30px);
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 10px;
-        padding: 12px;
-        font-size: 0.95rem;
-        line-height: 1.4;
-      }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    width: auto;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
     }
     </style>
   </head>
@@ -560,6 +562,7 @@
     </script>
   </body>
 </html>
+
 
 
 
