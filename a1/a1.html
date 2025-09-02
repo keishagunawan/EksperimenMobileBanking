@@ -415,32 +415,31 @@
           background: rgba(0, 0, 0, 0.7);
           z-index: 10000;
           display: none;
-          pointer-events: none;
+          pointer-events: none; /* biar cuma textbox yg bisa diklik */
         }
-        
+
         .tutorial-textbox {
           position: fixed;
-          top: 500px;
+          bottom: 20px;
           left: 50%;
           transform: translateX(-50%);
           max-width: 320px;
           width: calc(100% - 40px);
           background: white;
           color: #333;
-          padding: 16px;
+          padding: 5px;
           border-radius: 12px;
           text-align: center;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
           z-index: 10001;
           pointer-events: auto;
         }
-        
+
         .tutorial-textbox button {
-          margin-top: 12px;
+          margin-top: 3px;
           background: #0054a6;
           color: white;
           border: none;
-          padding: 10px 16px;
           border-radius: 6px;
           cursor: pointer;
         }
@@ -691,6 +690,7 @@
     </script>
   </body>
 </html>
+
 
 
 
