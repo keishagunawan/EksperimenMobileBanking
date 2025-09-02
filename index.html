@@ -100,6 +100,46 @@
         font-size: 1.2rem;
         color: #333;
       }
+
+      @media (max-width: 768px) {
+    body {
+      height: auto; /* biar bisa scroll di layar kecil */
+      padding: 20px;
+    }
+
+    .container {
+      flex-direction: column; /* ubah jadi portrait */
+      max-width: 100%;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .text-section {
+      padding: 24px;
+    }
+
+    .text-section h1 {
+      font-size: 2rem; /* lebih besar biar jelas */
+      text-align: center;
+    }
+
+    .text-section p {
+      font-size: 1.2rem; /* lebih besar dari laptop */
+      line-height: 1.6;
+    }
+
+    .text-section button {
+      font-size: 1.1rem;
+      padding: 14px 28px;
+      width: 100%;
+    }
+
+    .loading-overlay p {
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
     </style>
   </head>
   <body>
@@ -149,3 +189,4 @@
     </script>
   </body>
 </html>
+
