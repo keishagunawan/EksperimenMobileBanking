@@ -302,67 +302,6 @@
         cursor: pointer;
       }
 
-      @media (max-width: 400px) {
-        .modal-content {
-          margin: 18% 12px;
-          max-width: calc(100% - 24px);
-          padding: 14px;
-        }
-      }
-
-      .bank-logo {
-        width: 40px;
-        display: block;
-        margin: 20px auto 0px auto;
-      }
-
-      .dashed-line {
-        border: none;
-        border-top: 2px dashed #ccc;
-        margin: 10px 0 5px 0;
-      }
-
-      .checkmark {
-        width: 60px;
-        display: block;
-        margin: 20px auto 10px auto;
-      }
-
-      /* Overlay tutorial */
-      .tutorial-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 10000;
-        display: none;
-
-        /* penting: biar semua klik tembus ke bawah */
-        pointer-events: none;
-      }
-
-      .tutorial-textbox {
-        bottom: 30px;
-        max-width: none;
-        width: calc(100% - 30px);
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 10px;
-        padding: 12px;
-        font-size: 0.95rem;
-        line-height: 1.4;
-        margin-bottom: 500px;
-      }
-
-      .tutorial-textbox button {
-        margin-top: 12px;
-        background: #0054a6;
-        color: white;
-        border: none;
-        padding: 8px 14px;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-
       @media (max-width: 480px) {
         body {
           align-items: flex-start;
@@ -416,6 +355,38 @@
           font-size: 14px;
           padding: 10px;
         }
+
+      .tutorial-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10000;
+        display: none;
+        pointer-events: none;
+      }
+
+      .tutorial-textbox {
+        bottom: 30px;
+        max-width: none;
+        width: calc(100% - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 800px;
+      }
+
+      .tutorial-textbox button {
+        margin-top: 12px;
+        background: #0054a6;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
       }
     </style>
   </head>
@@ -609,5 +580,6 @@
     </script>
   </body>
 </html>
+
 
 
