@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Penjelasan Kondisi Eksperimen</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f8f3ec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        padding: 40px;
+        max-width: 800px;
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      ol {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 12px 28px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 25px;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Eksperimen Simulasi Mobile Banking (B3)</h1>
+      <ol>
+        <li>
+          Anda akan melakukan simulasi proses verifikasi dalam mobile banking
+          sebelum melakukan transaksi.
+        </li>
+        <li>
+          Kondisi eksperimen: anggap Anda sedang melakukan proses verifikasi
+          pada aplikasi mobile banking yang nyata.
+        </li>
+        <li>
+          Data yang Anda masukkan dalam proses verifikasi harus dianggap sebagai
+          data pribadi Anda sendiri.
+        </li>
+        <li>
+          Kami akan memberikan informasi PIN yang perlu Anda masukkan.
+          Perlakukan PIN tersebut seolah merupakan PIN pribadi Anda dan jaga
+          kerahasiaannya sebagaimana dalam situasi nyata.
+        </li>
+        <li>PIN yang perlu Anda masukkan adalah: 123456.</li>
+        <li>
+          Perhatikan dengan saksama metode autentikasi dan kebijakan privasi
+          yang ditampilkan.
+        </li>
+      </ol>
+      <button onclick="startExperiment()">Mulai Eksperimen</button>
+    </div>
+
+    <script>
+      function startExperiment() {
+        window.location.href = "b3.html";
+      }
+    </script>
+  </body>
+</html>
