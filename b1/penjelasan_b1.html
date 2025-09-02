@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penjelasan Kondisi Eksperimen</title>
     <style>
       body {
@@ -52,6 +52,38 @@
       button:hover {
         background: #555;
       }
+
+      @media (max-width: 768px) {
+        body {
+          height: auto; /* biar bisa scroll di layar kecil */
+          padding: 20px;
+          align-items: flex-start; /* biar konten mulai dari atas */
+        }
+
+        .container {
+          padding: 20px;
+          max-width: 100%;
+          width: 100%;
+          border-radius: 12px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        ol {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 12px 24px;
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -59,8 +91,11 @@
       <h1>Eksperimen Simulasi Mobile Banking (B1)</h1>
       <ol>
         <li>
-          Anda akan melakukan simulasi proses verifikasi dalam mobile banking
-          sebelum melakukan transaksi.
+          Anda akan melakukan
+          <b
+            >simulasi proses verifikasi dalam mobile banking sebelum melakukan
+            transaksi/pembayaran</b
+          >.
         </li>
         <li>
           Kondisi eksperimen: anggap Anda sedang melakukan proses verifikasi
