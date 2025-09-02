@@ -306,6 +306,7 @@
       body {
         align-items: flex-start;
         padding: 10px;
+        height: 100vh;
       }
     
       .app-container {
@@ -355,15 +356,14 @@
         font-size: 14px;
         padding: 10px;
       }
-    
-      .tutorial-textbox {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        max-width: none;
-        width: calc(100% - 30px);
-        left: 50%;
-        transform: translateX(-50%);
+        
+        .tutorial-textbox {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: 90%;
+        max-height: 90vh;
         border-radius: 10px;
         padding: 12px;
         font-size: 0.95rem;
@@ -562,6 +562,7 @@
     </script>
   </body>
 </html>
+
 
 
 
