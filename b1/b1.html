@@ -354,62 +354,96 @@
         text-decoration: underline;
       }
 
-      /* Styling khusus untuk smartphone */
-@media (max-width: 480px) {
-  body {
-    align-items: flex-start;
-    padding: 10px;
-  }
+     @media (max-width: 480px) {
+        body {
+          align-items: flex-start;
+          padding: 10px;
+        }
 
-  .app-container {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    min-height: 100vh;
-    border-radius: 0;
-  }
+        .app-container {
+          width: 100%;
+          max-width: none;
+          height: auto;
+          min-height: 100vh;
+          border-radius: 0;
+        }
 
-  .content {
-    padding: 16px;
-  }
+        .content {
+          padding: 16px;
+        }
 
-  .keypad {
-    gap: 8px;
-    padding: 12px;
-  }
+        .keypad {
+          gap: 8px;
+          padding: 12px;
+        }
 
-  .keypad button {
-    padding: 12px 0;
-    font-size: 18px; 
-  }
+        .keypad button {
+          padding: 12px 0;
+          font-size: 18px;
+        }
 
-  .bank-logo {
-    width: 50px;
-    margin-top: 10px;
-  }
+        .bank-logo {
+          width: 50px;
+          margin-top: 10px;
+        }
 
-  .checkmark {
-    width: 60px;
-  }
+        .checkmark {
+          width: 60px;
+        }
 
-  .success-page h2 {
-    font-size: 20px;
-  }
+        .success-page h2 {
+          font-size: 20px;
+        }
 
-  .nominal {
-    font-size: 20px;
-  }
+        .nominal {
+          font-size: 20px;
+        }
 
-  .success-details {
-    font-size: 12px;
-  }
+        .success-details {
+          font-size: 12px;
+        }
 
-  .btn-done {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+        .btn-done {
+          font-size: 14px;
+          padding: 10px;
+        }
 
+        .tutorial-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 10000;
+          display: none;
+          pointer-events: none; /* biar cuma textbox yg bisa diklik */
+        }
+
+        .tutorial-textbox {
+          position: fixed;
+          bottom: 40px; /* biar nongol di atas keypad hp */
+          left: 50%;
+          transform: translateX(-50%);
+          max-width: 320px;
+          width: calc(100% - 40px);
+          background: white;
+          color: #333;
+          padding: 16px;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          z-index: 10001;
+          pointer-events: auto; /* bisa diklik */
+        }
+
+        .tutorial-textbox button {
+          margin-top: 12px;
+          background: #0054a6;
+          color: white;
+          border: none;
+          padding: 10px 16px;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+      }
     </style>
   </head>
   <body>
@@ -699,6 +733,7 @@
     </script>
   </body>
 </html>
+
 
 
 
