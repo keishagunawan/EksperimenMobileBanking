@@ -138,11 +138,8 @@
 
       .success-content {
         flex-grow: 1;
-        padding: 24px;
+        padding: 0 24px;
         text-align: center;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
       }
 
       .checkmark {
@@ -228,7 +225,7 @@
       }
 
       .checkmark {
-        width: 60px;
+        width: 50px;
         display: block;
         margin: 20px auto 10px auto;
       }
@@ -273,12 +270,12 @@
       }
 
       .repeat-link {
-        text-align: right;
+        text-align: center;
         font-size: 12px;
         color: #0054a6;
         cursor: pointer;
         margin-right: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
       }
 
       .repeat-link:hover {
@@ -397,16 +394,16 @@
         <div class="message" id="message"></div>
       </div>
 
-      <div class="ojk-info">
-        <span>Diawasi oleh</span>
-        <img src="../ojk.png" alt="Logo OJK" />
-      </div>
-
       <div
         class="repeat-link"
         onclick="window.location.href='penjelasan_b2.html'"
       >
         ↻ Ulangi Eksperimen
+      </div>
+
+      <div class="ojk-info">
+        <span>Diawasi oleh</span>
+        <img src="../ojk.png" alt="Logo OJK" />
       </div>
 
       <div class="keypad">
@@ -430,21 +427,13 @@
       <div class="header">Status</div>
       <div class="success-content">
         <!-- Logo Bank Kita -->
-        <img
-          src="../bank_kita.png"
-          alt="Bank Kita Logo"
-          class="bank-logo"
-        />
+        <img src="../bank_kita.png" alt="Bank Kita Logo" class="bank-logo" />
 
         <!-- Garis putus-putus -->
         <hr class="dashed-line" />
 
         <!-- Checkmark -->
-        <img
-          src="../checkmark.png"
-          alt="checkmark"
-          class="checkmark"
-        />
+        <img src="../checkmark.png" alt="checkmark" class="checkmark" />
         <p class="transaksi-berhasil"><b>Transaksi Berhasil</b></p>
         <p class="nominal"><b>IDR 102.500,00</b></p>
 
@@ -613,7 +602,3 @@
     </script>
   </body>
 </html>
-
-
-
-
