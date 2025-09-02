@@ -284,6 +284,63 @@
       .repeat-link:hover {
         text-decoration: underline;
       }
+
+      /* Styling khusus untuk smartphone */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start; /* biar kontainer tidak terlalu "ngepress" di tengah */
+    padding: 10px;
+  }
+
+  .app-container {
+    width: 100%;
+    max-width: none; /* full width di layar HP */
+    height: auto; /* biar konten menyesuaikan */
+    min-height: 100vh;
+    border-radius: 0; /* di HP biasanya full screen tanpa radius */
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .keypad {
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .keypad button {
+    padding: 12px 0;
+    font-size: 18px; /* lebih kecil biar muat */
+  }
+
+  .bank-logo {
+    width: 50px;
+    margin-top: 10px;
+  }
+
+  .checkmark {
+    width: 60px;
+  }
+
+  .success-page h2 {
+    font-size: 20px;
+  }
+
+  .nominal {
+    font-size: 20px;
+  }
+
+  .success-details {
+    font-size: 12px;
+  }
+
+  .btn-done {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -523,4 +580,5 @@
     </script>
   </body>
 </html>
+
 
