@@ -146,13 +146,21 @@
       }
 
       @media (max-width: 480px) {
-      .image-section {
-        padding: 15px;
+      body {
+        height: auto;
+        padding: 20px;
       }
     
-      .image-section h2 {
-        font-size: 1.4rem;
-        line-height: 1.2;
+      .container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+      }
+    
+      .image-section {
+        width: 100%;
+        padding: 20px;
       }
     
       .welcome-image {
@@ -160,11 +168,11 @@
       }
     
       .text-section {
-        padding: 15px;
+        padding: 20px;
       }
     
       .text-section h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
     
       .text-section li {
@@ -173,60 +181,9 @@
       }
     
       .text-section button {
-        font-size: 0.95rem;
-        padding: 10px;
-      }
-    }
-
-      .image-section {
-        flex: 1;
-        flex-direction: column;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
-        background: linear-gradient(135deg, #9fb3df, #9ec6f3);
-      }
-
-      .welcome-image {
-        max-width: 100%;
-        max-height: 300px;
-        border-radius: 15px;
-        z-index: 2;
-      }
-
-      /* Elemen dekoratif */
-      .decor-circle {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
-        z-index: 1;
-      }
-
-      .decor-circle1 {
-        width: 100px;
-        height: 100px;
-        top: 10%;
-        left: 15%;
-      }
-
-      .decor-circle2 {
-        width: 60px;
-        height: 60px;
-        bottom: 15%;
-        right: 20%;
-      }
-
-      .decor-line {
-        position: absolute;
-        width: 2px;
-        height: 80%;
-        background: rgba(255, 255, 255, 0.15);
-        top: 10%;
-        left: 50%;
-        transform: rotate(15deg);
-        z-index: 1;
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
       }
     </style>
   </head>
@@ -309,4 +266,5 @@
     </script>
   </body>
 </html>
+
 
