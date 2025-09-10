@@ -86,6 +86,9 @@
       ol li:nth-child(7) {
         animation-delay: 1.4s;
       }
+      ol li:nth-child(8) {
+        animation-delay: 1.6s;
+      }
 
       button {
         display: block;
@@ -103,6 +106,11 @@
       button:hover {
         background: var(--c2);
         transform: translateY(-2px);
+      }
+
+      .note {
+        color: red;
+        font-weight: bold;
       }
 
       /* Animations */
@@ -189,6 +197,10 @@
             Perhatikan dengan saksama metode autentikasi, kebijakan privasi, dan
             indikator visual keamanan yang ditampilkan.
           </li>
+          <li class="note">
+            <i>Catatan:</i> Karena ini hanya simulasi, tidak ada data pribadi
+            Face ID yang diambil atau disimpan dalam proses ini.
+          </li>
         </ol>
         <button onclick="startExperiment()">Mulai Eksperimen</button>
       </div>
@@ -201,3 +213,4 @@
     </script>
   </body>
 </html>
+
